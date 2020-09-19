@@ -60,7 +60,7 @@ public class Program {
 	
 		ClassificacaoView cv = new ClassificacaoView();
 		
-		JOptionPane.showMessageDialog(null," O vencedor é o " + cv.vencedor(vencedor.get(0)));
+		JOptionPane.showMessageDialog(null," O vencedor Ã© o " + cv.vencedor(vencedor.get(0)));
 		
 	}
 	
@@ -117,7 +117,7 @@ public class Program {
 		Random random = new Random();
 		
 		int opcao;
-		JOptionPane.showMessageDialog(null,"Bem vindo ao Sistema de Acompanhamento e Gestão do Campeonato Brasileiro de Futebol");
+		JOptionPane.showMessageDialog(null,"Bem vindo ao Simulador de Campeonato Brasileiro de Futebol");
 		do {
 			for(int i : partidadao.returnAllIds()) {
 				partidadao.limparPartidas(i);
@@ -126,7 +126,7 @@ public class Program {
 				classificacaodao.limparClassificacao(i);
 				}
 			
-		opcao = Integer.parseInt(JOptionPane.showInputDialog(null, "Escolha uma das Opções abaixo! \n 1 - Gerar resultados automaticamente. \n 2 - Inserir resultados manualmente. \n 0 - Para sair."));
+		opcao = Integer.parseInt(JOptionPane.showInputDialog(null, "Escolha uma das OpÃ§Ãµes abaixo! \n 1 - Gerar resultados automaticamente. \n 2 - Inserir resultados manualmente. \n 0 - Para sair."));
 		
 		switch (opcao) {
 		case 1:
@@ -138,7 +138,7 @@ public class Program {
 		case 0:
 			break;
 		default:
-			JOptionPane.showMessageDialog(null,"Opção invalida!");
+			JOptionPane.showMessageDialog(null,"OpÃ§Ã£o invalida!");
 		}
 		}while(opcao != 0);
 		}
